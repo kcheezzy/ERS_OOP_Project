@@ -141,8 +141,9 @@ public class Admin {
             case "A":
                 info.set(10, "Passed");
                 Utils.writeFile("data/" + appNo + ".txt", info);
-                Applicant.transferToStudent(info, appNo);
+                System.out.println("Applicant marked as PASSED. They will choose to proceed in their dashboard.");
                 break;
+
             case "R":
                 info.set(10, "Failed");
                 Utils.writeFile("data/" + appNo + ".txt", info);
